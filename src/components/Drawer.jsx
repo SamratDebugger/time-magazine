@@ -1,41 +1,7 @@
 import { GiHamburgerMenu } from "react-icons/gi";
+import NavItem from "../code-optimization/NavItem";
 
 export default function Drawer() {
-  const navItem = (
-    <>
-      <li>
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <details>
-          <summary>News</summary>
-          <ul>
-            <li>
-              <a>Bijoy</a>
-            </li>
-            <li>
-              <a>Samrat</a>
-            </li>
-          </ul>
-        </details>
-      </li>
-      <li>
-        <a>Politics</a>
-      </li>
-      <li>
-        <a>Business</a>
-      </li>
-      <li>
-        <a>Education</a>
-      </li>
-      <li>
-        <a>Entertainment</a>
-      </li>
-      <li>
-        <a>Content</a>
-      </li>
-    </>
-  );
   return (
     <div className="drawer">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -54,7 +20,9 @@ export default function Drawer() {
             </div>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">{navItem}</ul>
+            <ul className="menu menu-horizontal px-1">
+              <NavItem />
+            </ul>
           </div>
           <div className="navbar-end">
             <a className="btn">Button</a>
@@ -71,7 +39,7 @@ export default function Drawer() {
         ></label>
         <ul className="menu bg-base-200 min-h-full w-80 p-4">
           {/* Sidebar content here */}
-          {navItem}
+          <NavItem />
         </ul>
       </div>
     </div>
