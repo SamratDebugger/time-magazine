@@ -2,6 +2,7 @@ import { CiSearch } from "react-icons/ci";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { RiTelegram2Line } from "react-icons/ri";
+import Drawer from "./Drawer";
 
 export default function Header() {
   return (
